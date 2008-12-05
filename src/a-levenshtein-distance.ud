@@ -1,0 +1,19 @@
+(section
+  (ref "levenshtein_distance")
+  (title "levenshtein.distance")
+  (para funtion_desc "Calculate Levenshtein distance.")
+  (subsection
+    (title "synopsis")
+    (para-verbatim function_synopsis
+"with levenshtein;
+
+function distance
+  (a : string;
+   b : string) return natural;
+"))
+  (subsection
+    (title "description")
+    (para
+      "The " (item function "distance") " function returns the Levenshtein
+      distance between the two strings " (item function_param "a") " and "
+      (item function_param "b") ".")))

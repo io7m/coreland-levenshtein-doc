@@ -1,0 +1,16 @@
+(section
+  (ref "levenshtein-comp")
+  (title "levenshtein-comp")
+
+  (section
+    (title "synopsis")
+    (para-verbatim
+"levenshtein-comp: usage: str0 str1"))
+
+  (section
+    (title "description")
+    (para "The " (item command "levenshtein-comp") " program calls "
+    (link "levenshtein_distance" "levenshtein.distance") " with "
+    (item function_param "str0") " and " (item function_param "str1")
+    " as string arguments and prints the resulting value."))
+)

@@ -1,0 +1,11 @@
+(section
+  (title "orientation")
+
+  (section
+    (title "overview")
+
+    (para "This package provides an Ada implementation of the " 
+      (link-ext "http://www.levenshtein.net/" "Levenshtein distance algorithm")
+      "."))
+
+) ; end of section

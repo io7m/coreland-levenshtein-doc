@@ -1,0 +1,48 @@
+(subsection
+  (title "standard use cases")
+  (para-verbatim example "
+# compile Ada source using the library
+$ levenshtein-conf compile cflags incdir
+-I/usr/local/include/coreland/levenshtein 
+
+# link object files against the static library
+$ levenshtein-conf compile ldflags slibdir
+-L/usr/local/lib/coreland/levenshtein-static -llevenshtein 
+
+# link object files against the dynamic library
+$ levenshtein-conf compile ldflags dlibdir
+-L/usr/local/lib/coreland/levenshtein -llevenshtein 
+
+"))
+
+(subsection
+  (title "other use cases")
+  (para-verbatim example "
+$ levenshtein-conf version
+levenshtein 0.0.1 
+
+$ levenshtein-conf incdir
+/usr/local/include/coreland/levenshtein 
+
+$ levenshtein-conf dlibdir
+/usr/local/lib/coreland/levenshtein 
+
+$ levenshtein-conf slibdir
+/usr/local/lib/coreland/levenshtein-static 
+
+$ levenshtein-conf cflags
+
+
+$ levenshtein-conf ldflags
+-llevenshtein 
+
+$ levenshtein-conf compile incdir
+-I/usr/local/include/coreland/levenshtein 
+
+$ levenshtein-conf compile dlibdir
+-L/usr/local/lib/coreland/levenshtein 
+
+$ levenshtein-conf compile slibdir
+-L/usr/local/lib/coreland/levenshtein-static 
+
+"))
